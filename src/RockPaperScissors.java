@@ -11,5 +11,10 @@ public class RockPaperScissors {
         Random rnd = new Random();
         System.out.println("Rock Paper Scissors");
         System.out.println("Select 1, 2, 3, for rock, paper, scissors");
+        while (b != 0) {
+            int rock = 1, paper = 2, scissors = 3;
+            input = sage.nextInt();
+            
+        }
     }
 }
