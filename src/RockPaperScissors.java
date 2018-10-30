@@ -14,7 +14,27 @@ public class RockPaperScissors {
         while (b != 0) {
             int rock = 1, paper = 2, scissors = 3;
             input = sage.nextInt();
-            
+            int randomNumber = rnd.nextInt(3 - 1 + 1) + 1;
+
+            if (randomNumber == rock) {
+                if (input == rock) {
+                    System.out.println("Rock vs Rock, Its a tie!");
+                } else if (input == paper) {
+                    System.out.println("Rock vs Paper, You win");
+                } else if (input == scissors) {
+                    System.out.println("Rock vs Scissors, You lose");
+                }
+            }else if (randomNumber == paper) {
+                if (input == rock) {
+                    System.out.println("Paper vs Rock, You lose");
+                } else if (randomNumber == paper) {
+                    if (input == paper) {
+                        System.out.println("Paper vs Paper, Its a tie");
+                    }
+
+                }
+            }
+
         }
     }
 }
