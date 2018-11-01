@@ -27,14 +27,20 @@ public class RockPaperScissors {
             }else if (randomNumber == paper) {
                 if (input == rock) {
                     System.out.println("Paper vs Rock, You lose");
-                } else if (randomNumber == paper) {
-                    if (input == paper) {
+                } else if (input == paper) {
                         System.out.println("Paper vs Paper, Its a tie");
+                } else if (input == scissors) {
+                        System.out.println("Paper vs Scissors, You win");
                     }
-
+            }else if (randomNumber == scissors) {
+                if (input == rock) {
+                    System.out.println("Scissors vs Rock, You win");
+                } else if (input == paper) {
+                    System.out.println("Scissors vs Paper, You lose");
+                } else if (input == scissors) {
+                    System.out.println("Scissors vs Scissors, Its a tie");
                 }
             }
-
         }
     }
 }
